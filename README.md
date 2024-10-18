@@ -23,8 +23,7 @@ Follow the steps below to set up the project on your machine.
 
 - Go to Settings in your OpenRouter account.
 - Navigate to Keys and click Create a New API Key.
-  
-Copy the key for use in the next step.
+- Copy the key for use in the next step.
 
 3. Clone the Repository
 
@@ -38,9 +37,10 @@ cd <your-repository-name>
 4. Set Up Environment Variables
 
 - Create a .env.local file in the project directory:
-
+  
+```
 touch .env.local
-
+```
 
 - Add the following line to the .env.local file:
  
