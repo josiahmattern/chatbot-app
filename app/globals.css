@@ -2,26 +2,24 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+
+/* Override the Prism.js theme to remove the background */
+pre, code {
+  background-color: transparent !important; /* Remove background */
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+/* Adjust pre block padding for compactness */
+pre {
+  padding: 0.5rem; /* Compact padding */
+  margin: 0.5rem 0; /* Consistent margin */
 }
 
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+/* Optionally tweak the font color for the best readability on dark backgrounds */
+code {
+  color: #f8f8f2; /* Default text color from Prism Tomorrow */
+  font-family: 'Fira Code', monospace; /* Optional: Use a monospace font */
+  font-size: 0.85rem; /* Smaller font size */
+  line-height: 1.4; /* Adjust line height */
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
-}
+/* Optional: Add a subtle border to code blocks to make them stand out */
