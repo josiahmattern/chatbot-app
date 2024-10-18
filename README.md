@@ -6,7 +6,7 @@ This is a Next.js project bootstrapped with create-next-app.
 
 ## Project Structure
 
-- app/api/route.js:
+- app/api/chat/route.js:
 This file contains the API logic to interact with OpenRouter’s chat completion endpoint. It handles the conversation history and manages interactions with the language model.
 - app/page.js:
 This file contains the styling and front-end layout of the main page, including the user interface where the chatbot interaction takes place.
